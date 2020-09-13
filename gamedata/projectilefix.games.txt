@@ -1,0 +1,37 @@
+"Games"
+{
+    "#default"
+    {
+        "Offsets"
+        {
+            "CBaseEntity::PhysicsSimulate"
+            {
+                "windows"   "104"
+                "linux"     "105"
+            }
+            "CPlayerInfoManager::GetGlobalVars"
+            {
+                "windows"   "1"
+                "linux"     "1"
+            }
+            "CTFRocketLauncher::FireProjectile"
+            {
+                "windows"   "462"
+                "linux"     "469"
+            }
+        }
+        "Signatures"
+        {
+            "CreateInterface"
+            {
+                "library"       "server"
+                "windows"       "@CreateInterface"
+                "linux"         "@CreateInterface"
+            }
+            "CBaseEntity::PhysicsCheckForEntityUntouch"
+            {
+                "linux"         "@_ZN11CBaseEntity28PhysicsCheckForEntityUntouchEv"
+            }
+        }
+    }
+}

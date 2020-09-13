@@ -456,9 +456,9 @@ public void PrePlayerThink(int client) {
                 before[1] == after[1] ||
                 before[2] == after[2])
                 PrintToServer("[%d] tick %d | didn't move!", entity, GetGameTickCount());
-            if (GetEntData(entity, g_iEntityFlagsOffset) & EFL_CHECK_UNTOUCH) {
-                SDKCall(g_hPhysicsCheckForEntityUntouch, entity);
-            }
+            //if (GetEntData(entity, g_iEntityFlagsOffset) & EFL_CHECK_UNTOUCH) {
+            //    SDKCall(g_hPhysicsCheckForEntityUntouch, entity);
+            //}
         }
 
     }

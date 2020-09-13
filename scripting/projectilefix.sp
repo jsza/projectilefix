@@ -119,7 +119,6 @@ public void OnPluginStart() {
     RegConsoleCmd("sm_rocketsim", cmdToggleRocketSim, "Enable/disable simulation fix.");
     RegConsoleCmd("sm_rocketping", cmdToggleLatencyFix, "Enable/disable latency fix.");
     RegConsoleCmd("sm_rocketpingoffset", cmdRocketPingOffset, "Add offset to rocket ping fix.");
-    HookEvent("player_hurt", PlayerHurt);
 }
 
 public Action cmdToggleLatencyFix(int client, int args)
